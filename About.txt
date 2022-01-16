@@ -1,0 +1,62 @@
+this is describes the present status of the project.
+
+at present there are four url links. 
+    1. @app.route("/")
+       @app.route("/login")
+
+    "/" and "/login" points to the login page.
+
+    2. @app.route('/books/allbooks', methods = ['GET'])
+
+        '/books/allbooks' takes us to a page, where is shows all the books in the books table.
+
+    3. @app.route("/books/insertrecord", methods=['GET','POST'])
+    
+        "/books/insertrecord" points to a page, where we can insert a book.
+    
+    4. @app.route("/library/libraryrecord", methods=['GET','POST'])
+
+       "/library/libraryrecord" takes us to a page where we can insert data for library_books table.
+
+    5. @app.route("/library/bookcheckout", methods=['GET','POST']) 
+
+        "/library/bookcheckout" takes us to a page to remove a book from library_books table.
+
+
+Project  files:
+
+main.py:
+	1. this is the starting point of the project.    
+	2. has all the function of handle urls.
+	3. for specific urls, there are functions that are written in a different python file. 
+
+the below specified files hold operations like create table, insert data, insert data from flask  specific to a table:
+
+books_operations.py,library_activities.py,library_book_operations.py,library_operations.py,user_operations.py.
+
+database.db: hold all the tables speficied in the requirement.
+
+templates dir: holds the html templates for different kinds of operations.
+
+requirements.txt: hold all the required packages on run this project.
+
+Note: 
+
+1. I have used user defined html forms because to get rid of postman. In the current stage, we shall enter our data which will get converted in python dictionary. 
+2. login page is not connected to the project as more time effor will be required.
+3. I have completed the first three requirement Create a book record, Create a library book record, Check-out a library book.
+4. as of now, there few weak points in the, which needs to be addressed, like: what is table is not present, what is query is not executed etc.
+5. coming tables: all the tables are designed as per given requirements.
+
+
+
+
+
+
+
+
+
+
+
+
+

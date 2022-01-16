@@ -1,0 +1,13 @@
+CREATE TABLE weather(id INTEGER PRIMARY KEY AUTOINCREMENT, temperature REAL, humidity REAL, date DATETIME);
+
+to exit: .exit
+
+TABLE 1 --> libraries
+
+CREATE TABLE libraries(library_id INTEGER PRIMARY KEY , name VARCHAR, city VARCHAR,state VARCHAR,postal_code VARCHAR);
+
+INSERT INTO libraries (library_id, name, city, state, postal_code) VALUES (1, "tui","mumbai", "maharastra", "400001");
+
+https://programminghistorian.org/en/lessons/creating-apis-with-python-and-flask
+
+
